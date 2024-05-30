@@ -18,6 +18,9 @@
 <body>
 
     <!-- Añadir un loader por aqui -->
+    <div id="loading-overlay" class="loading-overlay">
+        <div class="spinner-border text-warning" role="status"></div>
+    </div>
 
     <!-- Header -->
     <header class="bg-dark">
@@ -73,11 +76,10 @@
     <div id="menu" class="py-5 bg-secondary-subtle">
         <div class="container">
             <div class="row">
-                <div class="section-title">
+                <div class="col-12 section-title">
                     <h2 class="text-center mb-5">Menu</h2>
                 </div>
-                <div class="row">
-                    <div class="productos d-flex gap-3 justify-content-center flex-wrap">
+                <div class="productos d-flex gap-3 justify-content-center flex-wrap">
                         <div class="card" style="width: 18rem;">
                             <div class="image overflow-hidden">
                                 <img src="imagenes/Salchipapa típica de América Latina_ Salchichas con papas fritas, salsa de tomate, mostaza y mayonesa, en blanco _ Foto Premium.jpeg" class="card-img-top efecto-zoom" alt="...">
@@ -161,7 +163,6 @@
                               </div>
                             </div>
                           </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -173,5 +174,12 @@
     </footer>
 
     <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript para ocultar el indicador de carga una vez que la página haya terminado de cargar
+        window.addEventListener('load', function() {
+            var loadingOverlay = document.getElementById('loading-overlay');
+            loadingOverlay.classList.add('hidden');
+        });
+    </script>
 </body>
 </html>
