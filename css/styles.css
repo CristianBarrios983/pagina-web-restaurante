@@ -65,9 +65,19 @@ body{
 }
 
 .boton-hover:hover{
-    color: #212529 !important;
-    background-color: #ffffff;
-    border-color: #ffffff;
+  color: #212529 !important;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.boton-hover2{
+  transition: 1s;
+}
+
+.boton-hover2:hover{
+  color: #ffffff !important;
+  background-color: #212529;
+  border-color: #212529;
 }
 
 .nav-link:hover {
