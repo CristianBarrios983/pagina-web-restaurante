@@ -12,11 +12,10 @@ const cargarMenu = () => {
                         <img src="imagenes/Salchipapa típica de América Latina_ Salchichas con papas fritas, salsa de tomate, mostaza y mayonesa, en blanco _ Foto Premium.jpeg" class="card-img-top efecto-zoom" alt="...">
                     </div>
                     <div class="card-body">
-                    <h5 class="card-title fw-bold">${comida.comida}</h5>
-                    <p class="card-text">${comida.descripcion}</p>
+                    <h5 class="card-title fw-bold text-dark-blue">${comida.comida}</h5>
+                    <p class="card-text text-dark-blue">${comida.descripcion}</p>
                     <div class="d-flex justify-content-between align-items-center">
-                        <p class="fw-bold fs-5 mb-0">$${comida.precio}</p>
-                        <button class="btn btn-warning text-white boton-hover2">+</button>
+                        <p class="fw-bold fs-5 mb-0 text-dark-blue">$${comida.precio}</p>
                     </div>
                     </div>`;
 
